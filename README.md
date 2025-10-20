@@ -5,7 +5,7 @@ This is a group lab project, built using  PHP with PDO and Bootstrap. It demonst
 
 ##  Group Members & Contribution
  Kamure Beyonce Kabura — Backend Architecture & Database Design
-Daniella Wanjohi Nyambura — Frontend Development & Form Integration
+ Daniella Wanjohi Nyambura — Frontend Development & Form Integration
 
 ## Lab Tools
 - PHP (Object-Oriented + PDO)
@@ -23,8 +23,10 @@ oop-lab/
 ├── classes/             
 │   └── User.php
 │
-├── public/               
-│   ├── register.php      
+├── public/   
+│   ├── index.php
+│   ├── register.php 
+│   ├── verify.php
 │   ├── dashboard.php     
 │   └── assets/           
 │       └── style.css
@@ -35,5 +37,14 @@ oop-lab/
 ├── README.md            
 
 ## Progress Log
-
+Day 1 (20/10/2025)
+Beyonce: - Set up project structure
+         - Added database schema for users table
+         - Set up PDO connection
+         - Created user class
+         
+Daniella: - Created a login and registration/sign up page
+          - Created OTP verification page
+          - Added a user dashboard (for after login)
+    
 
