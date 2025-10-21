@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../config/database.php';
+require_once '../config/database.php';
 $db = new Database();
 ?>
 
@@ -7,16 +7,20 @@ $db = new Database();
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <div class="form-container">
     <h2>Login</h2>
     <form action="index.php" method="POST">
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="password" name="password" placeholder="Password" required>
-      <button type="submit" name="login">Login</button>
-      <p>Don't have an account? <a href="register.php">Register here</a></p>
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="Email" required><br></br>
+
+      <label for="password">Password:</label>
+      <input type="password" name="password" placeholder="Password" required><br></br>
+
+      <button type="submit" name="login">Login</button><br></br>
+      <p>Don't have an account? <a href="register.php">Register</a></p>
     </form>
   </div>
 </body>
@@ -40,7 +44,7 @@ if (isset($_POST['login'])) {
       echo "<script>alert('Please verify your account first.'); window.location='verify.php?email=$email';</script>";
     }
   } else {
-    echo "<script>alert('Invalid credentials.');</script>";
+    echo "<script>alert('Incorrect email or password. Try again');</script>";
   }
 }
 ?>
