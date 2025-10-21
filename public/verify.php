@@ -8,13 +8,13 @@ $email = $_GET['email'] ?? '';
 <head>
   <meta charset="UTF-8">
   <title>Verify Account</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <div class="form-container">
     <h2>Enter OTP</h2>
     <form action="verify.php?email=<?php echo $email; ?>" method="POST">
-      <input type="text" name="otp" placeholder="Enter your OTP" required>
+      <input type="text" name="otp" placeholder="Enter your OTP" required><br></br>
       <button type="submit" name="verify">Verify</button>
     </form>
   </div>
