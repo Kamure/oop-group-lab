@@ -48,3 +48,11 @@ Daniella: - Created a login and registration/sign up page
           - Added a user dashboard (for after login)
     
 
+    Day 2 (21/10/2025)
+Beyonce: - Complete registration,OTP verification,login and dashboard
+         - Added logout functionality and unified database connection
+          -Tested full user flow end-to-end
+
+Daniella: - Styled OTP 
+          - Styled Dashboard pages 
+        - Added logout confirmation and helped test flow
