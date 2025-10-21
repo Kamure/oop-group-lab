@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../config/database.php';
+require_once __DIR__ . '/../config/Database.php';
 $db = new Database();
 $email = $_GET['email'] ?? '';
 ?>
