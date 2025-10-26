@@ -8,8 +8,15 @@ class Service {
     $this->db = (new Database())->pdo;
   }
 
+
   public function getAllServices() {
     return $this->db->query("SELECT * FROM services")->fetchAll(PDO::FETCH_ASSOC);
+  }
+
+ 
+  public function addItem($title, $description, $price) {
+    $stmt = $this->db->prepare("INSERT INTO services (title, description, price) VALUES (?, ?, ?)");
+    return $stmt->execute([$title, $description, $price]);
   }
 }
 ?>
