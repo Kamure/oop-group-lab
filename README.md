@@ -55,4 +55,13 @@ Beyonce: - Complete registration,OTP verification,login and dashboard
 
 Daniella: - Styled OTP 
           - Styled Dashboard pages 
-        - Added logout confirmation and helped test flow
+        - Added logout confirmation and helped test flow 
+
+        Day 3 (25/10/25)
+Beyonce: - Added a service table 
+         - Added a service class 
+         - Created users.php for displaying all users 
+
+Daniella: - Added code for services page
+          - Updated the style.css
+          - updated the pages stylings by using bootstrap 
